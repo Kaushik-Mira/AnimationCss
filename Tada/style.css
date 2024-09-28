@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: aqua;
+}
+.tada {
+  animation: tada 1s infinite;
+  display: inline-block;
+}
+@keyframes tada {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: scale(1.1);
+  }
+  20%,
+  40%,
+  60% {
+    transform: scale(0.9);
+  }
+}

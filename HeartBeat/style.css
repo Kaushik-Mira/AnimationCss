@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: aqua;
+}
+.heart-beat {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+  transform: rotate(-45deg);
+  animation: heart-beat 1.5s infinite;
+  box-shadow: 0 0 30px #f00;
+}
+.heart-beat::before,
+.heart-beat::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #f00;
+}
+.heart-beat::before {
+  top: -50px;
+  left: 0;
+}
+.heart-beat::after {
+  left: 50px;
+  top: 0;
+}
+@keyframes heart-beat {
+  0%,
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-45deg);
+  }
+}

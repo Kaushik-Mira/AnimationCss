@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: aqua;
+}
+.head-shake {
+    animation: headShake 0.82s ease-in-out infinite;
+    display: inline-block;
+}
+@keyframes headShake {
+    0%, 100%{
+        transform: translateX(0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px)
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px)
+    }
+}
