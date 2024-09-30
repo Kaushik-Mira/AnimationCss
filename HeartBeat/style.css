@@ -12,6 +12,7 @@ body {
   background-color: #000;
   color: aqua;
 }
+
 .heart-beat {
   position: relative;
   width: 100px;
@@ -21,6 +22,7 @@ body {
   animation: heart-beat 1.5s infinite;
   box-shadow: 0 0 30px #f00;
 }
+
 .heart-beat::before,
 .heart-beat::after {
   content: "";
@@ -31,6 +33,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 30px #f00;
 }
+
 .heart-beat::before {
   top: -50px;
   left: 0;
@@ -39,6 +42,7 @@ body {
   left: 50px;
   top: 0;
 }
+
 @keyframes heart-beat {
   0%,
   100% {
@@ -48,3 +52,4 @@ body {
     transform: scale(1.2) rotate(-45deg);
   }
 }
+
